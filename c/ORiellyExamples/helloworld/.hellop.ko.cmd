@@ -1,0 +1,1 @@
+cmd_/home/teacher/Modules/ORiellyExamples/helloworld/hellop.ko := ld -m elf_i386 -r -m elf_i386  --build-id -o /home/teacher/Modules/ORiellyExamples/helloworld/hellop.ko /home/teacher/Modules/ORiellyExamples/helloworld/hellop.o /home/teacher/Modules/ORiellyExamples/helloworld/hellop.mod.o

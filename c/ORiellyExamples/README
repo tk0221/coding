@@ -1,0 +1,14 @@
+This directory contains the source code for the following modules:
+- helloworld
+- scull device
+- scullpipe device
+
+Each of the above directories contains a README file with
+instructions for compiling a module, loading it, and testing it. 
+
+Man pages for the Kernel functions can be accessed online at the following site:
+http://kerneltrap.org/man/linux/
+
+Kernel routines such as register_chrdev_region, cdev_init, cdev_add, etc. are available in Section 9. 
+Use the search box on the above link to search for the particular Kernel function
+that you want to find the information about. 

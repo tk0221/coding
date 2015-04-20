@@ -1,0 +1,45 @@
+Compiling and Installing helloworld module
+-------------------------------------------
+Module: hello.ko
+Functionality: Writes "Hello, world" string in /proc/kmesg
+Procedure to install the module and test it:
+1. make
+2. sudo insmod hello.ko
+   This may ask you for your root password.
+3. Observe the messages written to /proc/kmesg using the following command:
+   dmesg /proc/kmesg
+
+----------------------------------------------------------------------------------------------------
+
+Module: hellop.ko
+Functionality: Writes "Hello, world" string specified number of times in /proc/kmesg
+Procedure to install the module and test it:
+1. make
+2. sudo insmod hellop.ko
+   This may ask you for your root password.
+3. Observe the messages written to /proc/kmesg using the following command:
+   dmesg /proc/kmesg
+
+----------------------------------------------------------------------------------------------------
+
+Module: hello1.ko
+Functionality: Writes "Hello, world" string in /var/log/messages
+Procedure to install the module and test it:
+1. make
+2. sudo insmod hello1.ko
+   This may ask you for your root password.
+3. Observe the messages written to /var/log/messages using the following command:
+   tail /var/log/messages
+
+----------------------------------------------------------------------------------------------------
+
+Module: hellop1.ko
+Functionality: Writes "Hello, world" string specified number of times in /var/log/messages
+Procedure to install the module and test it:
+1. make
+2. sudo insmod hellop1.ko
+   This may ask you for your root password.
+3. Observe the messages written to /var/log/messages using the following command:
+   tail /var/log/messages
+
+   

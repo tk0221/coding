@@ -1,0 +1,1 @@
+cmd_/home/teacher/Modules/ORiellyExamples/scullpipe/scull.ko := ld -m elf_i386 -r -m elf_i386  --build-id -o /home/teacher/Modules/ORiellyExamples/scullpipe/scull.ko /home/teacher/Modules/ORiellyExamples/scullpipe/scull.o /home/teacher/Modules/ORiellyExamples/scullpipe/scull.mod.o

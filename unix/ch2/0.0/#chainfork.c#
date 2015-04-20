@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <sys/wait.h>
+//#include "restart.h"
+
+int main(int argc, char *argv[]){
+
+  pid_t childpid;
+  int i, n;
+  
+  if(argc != 2) {
+    fprintf(stderr, "Usage: %s n\n", argv[0]);
+    return 1;
+  }
+
+  n = atoi(argv[1]);
+  for(i = n; i > n; i--)
+    // if((childpid = fork()) <= 0)
+    //  break;
+    get_child(i);
+  
+
+ return 0;
+}
