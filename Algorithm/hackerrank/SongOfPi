@@ -1,0 +1,37 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    private static String pi = "31415926535897932384626433833";
+    
+    public static void check(String str){
+        String delims = " ";
+        StringTokenizer st = new StringTokenizer(str, delims);
+        int i = 0;
+        
+        while(st.hasMoreElements()){
+            String tmp = st.nextElement().toString();
+            if(tmp.length() != pi.charAt(i++)-'0'){
+                System.out.println("It's not a pi song.");
+                return;
+            }            
+        }
+        System.out.println("It's a pi song.");
+            
+    }
+    
+    public static void main(String[] args) {
+    //3.1415926535897932384626433833
+        Scanner in = new Scanner(System.in);
+        int test = in.nextInt();
+        in.nextLine(); 
+        while(test>0){
+            check(in.nextLine()); 
+            --test;
+        }
+        
+    }
+}
