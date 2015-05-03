@@ -2,7 +2,7 @@
 //My Goal is O(n) algorithm
 
 public class DisjointContiguous {
-    
+    static int[] arr1 = {-1, -2, 1, -4, 2, 8};
     static int[] arr2 = {4, -1, 7};
     static int[] arr3 = {-1, -2, -3};
 
