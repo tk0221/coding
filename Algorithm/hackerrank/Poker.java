@@ -1,4 +1,10 @@
 import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
 
 public class Poker {
 
@@ -41,9 +47,14 @@ public class Poker {
 
 	class Hands {
 
-		Card cards[];
-		
-		public void Hand(String s){
+		private Card[] cards;
+
+	    //	    Hand(){};
+
+	    public Hands(){} //constructor
+	    // public void Hands(){}//method
+	    
+		public  void Hands(String s){
 			cards = new Card[5];
 			
 			String delims = " ";
@@ -55,10 +66,50 @@ public class Poker {
 			
 			
 		}
+	    public Card[] getCards(){
+		return cards;
+	    }
 
 	}
+    public static void showDown(Hands h1, Hands h2) {
 
+	
+	Card[] p1 = h1.getCards();
+	Card[] p2 = h1.getCards();
+	
+
+    }
+
+
+    
+    
 	public static void main(String[] args) {
 
+	    Scanner in = new Scanner(System.in);
+	    int test = in.nextInt();
+	    in.nextLine();
+
+	    while(test>0){
+		String player1 = in.nextLine();
+		int mid = player1.length()/2;
+		String player2 = player1.substring(mid);
+		player1 = player1.substring(0, mid);
+
+		System.out.println(player1);
+		System.out.println(player2);
+
+		//	Hands h1=  new Hand();
+		Hands h1 = null;
+		Hands h2 = null;
+		h1.Hands(player1);
+	        h2.Hands(player2);
+
+		
+ 
+		
+		--test;
+	    }
+	    
+	    
 	}
 }
