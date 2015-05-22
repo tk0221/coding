@@ -1,4 +1,0 @@
-cpp
-===
-
-practice cpp programming
