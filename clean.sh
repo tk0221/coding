@@ -1,5 +1,5 @@
 #!/bin/sh
-# This is a comment
+find . -name "*.class" -or -name "*.class~" | xargs rm
+
+
 echo "CLEAN"
-rm -rf *.class
-rm -rf *.java~
