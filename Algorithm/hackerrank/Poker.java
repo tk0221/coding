@@ -31,20 +31,21 @@ public class Poker {
 
 private static	class Card {
 
-		private SUITS s;
+		private char s;
 		private char k;
 
 
     public Card(){};
-		public Card(SUITS s, char k) {
+		public Card(char s, char k) {
 			this.s = s;
 			this.k = k;
 		}
 
 		public Card(String str) {
 		    System.out.println("DEBUG: " + str);
-			this.k = str.charAt(0);
-			this.s.setS(str.charAt(1));
+		    this.k = str.charAt(0);
+		    this.s = str.charAt(1);
+		    System.out.println("DEBUG : end");
 		}
 	}
 
